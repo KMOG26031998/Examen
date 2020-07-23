@@ -21,5 +21,143 @@ public class Paises {
     private Integer numericCode;
 
 
+    public Integer getNumericCode() {
+        return numericCode;
+    }
 
+    public void setNumericCode(Integer numericCode) {
+        this.numericCode = numericCode;
+    }
+
+    public String getNativeName() {
+        return nativeName;
+    }
+
+    public String getBorders() {
+        return borders;
+    }
+
+    public void setBorders(String borders) {
+        this.borders = borders;
+    }
+
+    public String getTimesones() {
+        return timesones;
+    }
+
+    public void setTimesones(String timesones) {
+        this.timesones = timesones;
+    }
+
+    public Integer getGini() {
+        return gini;
+    }
+
+    public void setGini(Integer gini) {
+        this.gini = gini;
+    }
+
+    public Integer getArea() {
+        return area;
+    }
+
+    public void setArea(Integer area) {
+        this.area = area;
+    }
+
+    public String getDemonym() {
+        return demonym;
+    }
+
+    public void setDemonym(String demonym) {
+        this.demonym = demonym;
+    }
+
+    public Integer getLatng() {
+        return latng;
+    }
+
+    public void setLatng(Integer latng) {
+        this.latng = latng;
+    }
+
+    public Integer getPopulation() {
+        return population;
+    }
+
+    public void setPopulation(Integer population) {
+        this.population = population;
+    }
+
+    public String getSubregion() {
+        return subregion;
+    }
+
+    public void setSubregion(String subregion) {
+        this.subregion = subregion;
+    }
+
+    public String getRegion() {
+        return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
+    public String getAltSpellingM() {
+        return altSpellingM;
+    }
+
+    public void setAltSpellingM(String altSpellingM) {
+        this.altSpellingM = altSpellingM;
+    }
+
+    public String getCapital() {
+        return capital;
+    }
+
+    public void setCapital(String capital) {
+        this.capital = capital;
+    }
+
+    public Integer getCallingCodes() {
+        return callingCodes;
+    }
+
+    public void setCallingCodes(Integer callingCodes) {
+        this.callingCodes = callingCodes;
+    }
+
+    public String getAlpha3Code() {
+        return alpha3Code;
+    }
+
+    public void setAlpha3Code(String alpha3Code) {
+        this.alpha3Code = alpha3Code;
+    }
+
+    public String getAlpha2Code() {
+        return alpha2Code;
+    }
+
+    public void setAlpha2Code(String alpha2Code) {
+        this.alpha2Code = alpha2Code;
+    }
+
+    public String getTopLevelDomain() {
+        return topLevelDomain;
+    }
+
+    public void setTopLevelDomain(String topLevelDomain) {
+        this.topLevelDomain = topLevelDomain;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
