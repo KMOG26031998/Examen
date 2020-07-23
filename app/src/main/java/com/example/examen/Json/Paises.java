@@ -1,4 +1,4 @@
-package com.example.examen;
+package com.example.examen.Json;
 
 public class Paises {
     private String name;
@@ -19,6 +19,12 @@ public class Paises {
     private String borders;
     private String nativeName;
     private Integer numericCode;
+    private String code;
+    private String name1;
+    private String symbol;
+    private String languages;
+    private String iso639_1;
+    private String iso639_2;
 
 
     public Integer getNumericCode() {
@@ -159,5 +165,53 @@ public class Paises {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getName1() {
+        return name1;
+    }
+
+    public void setName1(String name1) {
+        this.name1 = name1;
+    }
+
+    public String getSymbol() {
+        return symbol;
+    }
+
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
+
+    public String getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(String languages) {
+        this.languages = languages;
+    }
+
+    public String getIso639_1() {
+        return iso639_1;
+    }
+
+    public void setIso639_1(String iso639_1) {
+        this.iso639_1 = iso639_1;
+    }
+
+    public String getIso639_2() {
+        return iso639_2;
+    }
+
+    public void setIso639_2(String iso639_2) {
+        this.iso639_2 = iso639_2;
     }
 }
