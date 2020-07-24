@@ -18,7 +18,7 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdap
         ImageView alpha2Code;
     public ViewHolder(View itemView) {
             super(itemView);
-            name =(TextView)itemView.findViewById(R.id.textPais );
+            name =(TextView)itemView.findViewById(R.id.txtname);
         alpha2Code = itemView.findViewById(R.id.ivpais);
         }
     }
