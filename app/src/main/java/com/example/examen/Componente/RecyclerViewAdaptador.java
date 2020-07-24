@@ -20,14 +20,15 @@ import java.util.List;
 
 public class RecyclerViewAdaptador {
     public static class ViewHolder extends RecyclerView.ViewHolder{
-    private TextView name,topLevelDomain,alpha2Code,alpha3Code,capital,altSpellingM,region,subregion,demonym,timesones,borders,languages;
+    private TextView name,topLevelDomain,alpha2Code,alpha3Code,capital;
+    //altSpellingM,region,subregion,demonym,timesones,borders,languages;
     ImageView imagenusuario;
     public ViewHolder(View itemView) {
         super(itemView);
         name =(TextView)itemView.findViewById(R.id.txtname );
         topLevelDomain =(TextView)itemView.findViewById(R.id.txttopLevelDomain);
-        alpha2Code =(TextView)itemView.findViewById(R.id.txtalpha2Code );
-        alpha3Code =(TextView)itemView.findViewById(R.id.txtalpha3Code );
+        alpha2Code =(TextView)itemView.findViewById(R.id.txtalpha2Code);
+        alpha3Code =(TextView)itemView.findViewById(R.id.txtalpha3Code);
         capital =(TextView)itemView.findViewById(R.id.txtcapital);
       /* altSpellingM =(TextView)itemView.findViewById(R.id.txtaltSpellingM);
         region =(TextView)itemView.findViewById(R.id.txtregion );
