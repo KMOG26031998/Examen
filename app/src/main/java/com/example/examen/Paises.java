@@ -17,27 +17,25 @@ public class Paises {
     private Integer gini;
     private String timesones;
     private String borders;
-    private String nativeName;
-    private Integer numericCode;
-    private String code;
-    private String name1;
-    private String symbol;
     private String languages;
-    private String iso639_1;
-    private String iso639_2;
-public Paises() { }
 
-    public Integer getNumericCode() {
-        return numericCode;
-    }
-
-    public void setNumericCode(Integer numericCode) {
-        this.numericCode = numericCode;
-    }
-
-    public String getNativeName() {
-        return nativeName;
-    }
+public Paises()
+{ }
+ public Paises(String name,String topLevelDomain,String alpha2Code,String alpha3Code,String capital,String altSpellingM,String region,String subregion,
+               String demonym,String timesones,String borders,String symbol,String languages ){
+    this.name=name;
+    this.topLevelDomain=topLevelDomain;
+    this.alpha2Code=alpha2Code;
+    this.alpha3Code=alpha3Code;
+    this.capital=capital;
+    this.altSpellingM=altSpellingM;
+    this.region=region;
+    this.subregion=subregion;
+    this.demonym=demonym;
+    this.timesones=timesones;
+    this.borders=borders;
+    this.languages=languages;
+ }
 
     public String getBorders() {
         return borders;
@@ -167,29 +165,6 @@ public Paises() { }
         this.name = name;
     }
 
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getName1() {
-        return name1;
-    }
-
-    public void setName1(String name1) {
-        this.name1 = name1;
-    }
-
-    public String getSymbol() {
-        return symbol;
-    }
-
-    public void setSymbol(String symbol) {
-        this.symbol = symbol;
-    }
 
     public String getLanguages() {
         return languages;
@@ -199,19 +174,4 @@ public Paises() { }
         this.languages = languages;
     }
 
-    public String getIso639_1() {
-        return iso639_1;
-    }
-
-    public void setIso639_1(String iso639_1) {
-        this.iso639_1 = iso639_1;
-    }
-
-    public String getIso639_2() {
-        return iso639_2;
-    }
-
-    public void setIso639_2(String iso639_2) {
-        this.iso639_2 = iso639_2;
-    }
-}
+  }
