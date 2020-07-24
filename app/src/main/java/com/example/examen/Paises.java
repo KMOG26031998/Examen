@@ -1,4 +1,4 @@
-package com.example.examen.Json;
+package com.example.examen;
 
 public class Paises {
     private String name;
@@ -25,7 +25,7 @@ public class Paises {
     private String languages;
     private String iso639_1;
     private String iso639_2;
-
+public Paises() { }
 
     public Integer getNumericCode() {
         return numericCode;
