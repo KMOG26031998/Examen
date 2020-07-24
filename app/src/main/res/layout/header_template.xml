@@ -26,55 +26,14 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp" />
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/txtname"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="TextView" />
 
-                <TextView
-                    android:id="@+id/txtname"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="3dp"
-                    android:paddingBottom="3dp"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/txttopLevelDomain"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="3dp"
-                    android:paddingBottom="3dp"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/txtalpha2Code "
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="3dp"
-                    android:paddingBottom="3dp"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/txtalpha3Code"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="3dp"
-                    android:paddingBottom="3dp"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/txtcapital"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="3dp"
-                    android:paddingBottom="3dp"
-                    android:text="TextView" />
-            </LinearLayout>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

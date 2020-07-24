@@ -26,7 +26,7 @@ public class RecyclerViewAdaptador {
     public ViewHolder(View itemView) {
             super(itemView);
             name =(TextView)itemView.findViewById(R.id.txtname );
-            topLevelDomain =(TextView)itemView.findViewById(R.id.txttopLevelDomain);
+         /*   topLevelDomain =(TextView)itemView.findViewById(R.id.txttopLevelDomain);
             alpha2Code =(TextView)itemView.findViewById(R.id.txtalpha2Code);
             alpha3Code =(TextView)itemView.findViewById(R.id.txtalpha3Code);
             capital =(TextView)itemView.findViewById(R.id.txtcapital);
