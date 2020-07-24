@@ -20,16 +20,16 @@ import java.util.List;
 
 public class RecyclerViewAdaptador {
     public static class ViewHolder extends RecyclerView.ViewHolder{
-    private TextView name,topLevelDomain,alpha2Code,alpha3Code,capital;
-    //altSpellingM,region,subregion,demonym,timesones,borders,languages;
-    ImageView imagenusuario;
+        private TextView name,topLevelDomain,alpha2Code,alpha3Code,capital;
+        //altSpellingM,region,subregion,demonym,timesones,borders,languages;
+        ImageView imagenusuario;
     public ViewHolder(View itemView) {
-        super(itemView);
-        name =(TextView)itemView.findViewById(R.id.txtname );
-        topLevelDomain =(TextView)itemView.findViewById(R.id.txttopLevelDomain);
-        alpha2Code =(TextView)itemView.findViewById(R.id.txtalpha2Code);
-        alpha3Code =(TextView)itemView.findViewById(R.id.txtalpha3Code);
-        capital =(TextView)itemView.findViewById(R.id.txtcapital);
+            super(itemView);
+            name =(TextView)itemView.findViewById(R.id.txtname );
+            topLevelDomain =(TextView)itemView.findViewById(R.id.txttopLevelDomain);
+            alpha2Code =(TextView)itemView.findViewById(R.id.txtalpha2Code);
+            alpha3Code =(TextView)itemView.findViewById(R.id.txtalpha3Code);
+            capital =(TextView)itemView.findViewById(R.id.txtcapital);
       /* altSpellingM =(TextView)itemView.findViewById(R.id.txtaltSpellingM);
         region =(TextView)itemView.findViewById(R.id.txtregion );
         subregion =(TextView)itemView.findViewById(R.id.txtsubregion);
@@ -37,9 +37,9 @@ public class RecyclerViewAdaptador {
         timesones =(TextView)itemView.findViewById(R.id.txttimesones);
         borders =(TextView)itemView.findViewById(R.id.txtborders);
         borders =(TextView)itemView.findViewById(R.id.txtlanguages);*/
-        imagenusuario = itemView.findViewById(R.id.ivpais);
+            imagenusuario = itemView.findViewById(R.id.ivpais);
+        }
     }
-}
     public List<Paises> paisesListist;
     RequestManager option;
     public RecyclerViewAdaptador(List<Paises> paisesListist){
