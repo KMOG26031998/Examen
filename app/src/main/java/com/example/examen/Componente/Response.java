@@ -8,6 +8,6 @@ import java.util.List;
 public class Response {
     @SerializedName("Paises")
     @Expose
-    private List<Paises> Usuarios;
+    private List<Paises> Paises;
 }
 

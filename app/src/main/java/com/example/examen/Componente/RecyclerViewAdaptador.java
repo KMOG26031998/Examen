@@ -1,5 +1,4 @@
 package com.example.examen.Componente;
-
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,22 +18,10 @@ import java.util.List;
 public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdaptador.ViewHolder> {
     public static class ViewHolder extends RecyclerView.ViewHolder{
         private TextView name;
-        //,topLevelDomain,alpha2Code,alpha3Code,capital,altSpellingM,region,subregion,demonym,timesones,borders,languages;
         ImageView alpha2Code;
     public ViewHolder(View itemView) {
             super(itemView);
             name =(TextView)itemView.findViewById(R.id.txtname );
-         /*   topLevelDomain =(TextView)itemView.findViewById(R.id.txttopLevelDomain);
-            alpha2Code =(TextView)itemView.findViewById(R.id.txtalpha2Code);
-            alpha3Code =(TextView)itemView.findViewById(R.id.txtalpha3Code);
-            capital =(TextView)itemView.findViewById(R.id.txtcapital);
-      /* altSpellingM =(TextView)itemView.findViewById(R.id.txtaltSpellingM);
-        region =(TextView)itemView.findViewById(R.id.txtregion );
-        subregion =(TextView)itemView.findViewById(R.id.txtsubregion);
-        demonym =(TextView)itemView.findViewById(R.id.txtdemonym );
-        timesones =(TextView)itemView.findViewById(R.id.txttimesones);
-        borders =(TextView)itemView.findViewById(R.id.txtborders);
-        borders =(TextView)itemView.findViewById(R.id.txtlanguages);*/
         alpha2Code = itemView.findViewById(R.id.ivpais);
         }
     }
@@ -53,10 +40,7 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdap
     @Override
     public void onBindViewHolder(RecyclerViewAdaptador.ViewHolder holder, int position) {
         holder.name.setText((paisesListist.get(position).getName()));
-        /*holder.topLevelDomain.setText((paisesListist.get(position).getTopLevelDomain()));
-        holder.alpha2Code.setText((paisesListist.get(position).getAlpha2Code()));
-        holder.alpha3Code.setText((paisesListist.get(position).getAlpha3Code()));
-        holder.capital.setText((paisesListist.get(position).getCapital()));*/
+
        option.load(paisesListist.get(position).getAlpha2Code()).centerCrop().into(holder.alpha2Code);
     }
     @Override

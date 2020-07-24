@@ -1,8 +1,6 @@
 package com.example.examen;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.Placeholder;
-
 import android.os.Bundle;
 import android.view.View;
 import androidx.annotation.NonNull;
@@ -13,19 +11,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import com.bumptech.glide.Glide;
 import com.example.examen.Componente.RecyclerViewAdaptador;
 import com.example.examen.Componente.Servidor;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -56,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
                 .baseUrl("https://restcountries.eu/rest/v2/all")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
+        String url="http://www.geognos.com/api/en/countries/flag/{alpha2code}.png"+"alpha2Code="+bundle.getString("usr")+"&pass="+bundle.getString("pass");
+
         Servidor svr = retrofit.create(Servidor.class);
         Call<List<Paises>> call = svr.getUsuarios();
         call.enqueue(new Callback<List<Paises>>() {
@@ -67,7 +64,9 @@ public class MainActivity extends AppCompatActivity {
                 List<Paises> postUsuarios = response.body();
                 recyclerViewAdapter = new RecyclerViewAdaptador(postUsuarios);
                 recyclerView.setAdapter(recyclerViewAdapter);
-
+// http://www.geognos.com/api/en/countries/flag/{alpha2code}.png
+//
+//
             }
             @Override
             public void onFailure(Call<List<Paises>> call, Throwable t) {
