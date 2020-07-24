@@ -40,8 +40,7 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdap
     @Override
     public void onBindViewHolder(RecyclerViewAdaptador.ViewHolder holder, int position) {
         holder.name.setText((paisesListist.get(position).getName()));
-
-       option.load(paisesListist.get(position).getAlpha2Code()).centerCrop().into(holder.alpha2Code);
+       option.load("http://www.geognos.com/api/en/countries/flag/"+paisesListist.get(position).getAlpha2Code()+".png").centerCrop().into(holder.alpha2Code);
     }
     @Override
     public int getItemCount() {

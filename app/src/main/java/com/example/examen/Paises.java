@@ -18,9 +18,9 @@ public class Paises {
     private String timesones;
     private String borders;
     private String languages;
-public Paises()
-{ }
- public Paises(String name,String topLevelDomain,String alpha2Code,String alpha3Code,String capital,String altSpellingM,String region,String subregion,
+/*public Paises()
+{ }*/
+ /*public Paises(String name,String topLevelDomain,String alpha2Code,String alpha3Code,String capital,String altSpellingM,String region,String subregion,
                String demonym,String timesones,String borders,String symbol,String languages ){
     this.name=name;
     this.topLevelDomain=topLevelDomain;
@@ -34,7 +34,7 @@ public Paises()
     this.timesones=timesones;
     this.borders=borders;
     this.languages=languages;
- }
+ }*/
 
     public String getBorders() {
         return borders;
