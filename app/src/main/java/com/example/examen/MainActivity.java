@@ -51,9 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 .baseUrl("https://restcountries.eu/rest/v2/lang/")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
-       // String url="http://www.geognos.com/api/en/countries/flag/{alpha2code}.png"+"alpha2Code="+bundle.getString("usr")+"&pass="+bundle.getString("pass");
-
-        Servidor svr = retrofit.create(Servidor.class);
+       Servidor svr = retrofit.create(Servidor.class);
         Call<List<Paises>> call = svr.getPaises();
         call.enqueue(new Callback<List<Paises>>() {
             @Override
@@ -64,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
                 List<Paises> postpaises = response.body();
                 recyclerViewAdapter = new RecyclerViewAdaptador(postpaises);
                 recyclerView.setAdapter(recyclerViewAdapter);
-  //nnhttp://www.geognos.com/api/en/countries/flag/{alpha2code}.png
             }
             @Override
             public void onFailure(Call<List<Paises>> call, Throwable t) {
