@@ -18,7 +18,7 @@ import com.example.examen.Paises;
 import java.security.AccessController;
 import java.util.List;
 
-public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdaptador.ViewHolder>{
+public class RecyclerViewAdaptador {
     public static class ViewHolder extends RecyclerView.ViewHolder{
     private TextView name,topLevelDomain,alpha2Code,alpha3Code,capital,altSpellingM,region,subregion,demonym,timesones,borders,languages;
     ImageView imagenusuario;
@@ -44,7 +44,7 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdap
     public RecyclerViewAdaptador(List<Paises> paisesListist){
         this.paisesListist = paisesListist;
     }
-    @Override
+    /*@Override
     public RecyclerViewAdaptador.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_pais,parent,false);
         final RecyclerViewAdaptador.ViewHolder viewHolder = new RecyclerViewAdaptador.ViewHolder(view);
@@ -63,5 +63,5 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdap
     @Override
     public int getItemCount() {
         return paisesListist.size();
-    }
+    }*/
 }
