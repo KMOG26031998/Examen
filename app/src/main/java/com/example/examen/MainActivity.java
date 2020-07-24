@@ -12,7 +12,7 @@ private Placeholder placeholder;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-      // placeholder = findViewById(R.id.placeholder);
+       //placeholder = findViewById(R.id.placeholder);
     }
     public void swapView(View v)
     {
