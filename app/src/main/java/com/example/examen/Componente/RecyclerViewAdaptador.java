@@ -20,8 +20,8 @@ import java.util.List;
 
 public class RecyclerViewAdaptador {
     public static class ViewHolder extends RecyclerView.ViewHolder{
-        private TextView name,topLevelDomain,alpha2Code,alpha3Code,capital;
-        //altSpellingM,region,subregion,demonym,timesones,borders,languages;
+        private TextView name;
+        //,topLevelDomain,alpha2Code,alpha3Code,capital,altSpellingM,region,subregion,demonym,timesones,borders,languages;
         ImageView imagenusuario;
     public ViewHolder(View itemView) {
             super(itemView);
